@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@200;300;400;500;600;700;800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mario Bros</title>
+</head>
+
+<body>
+    <header>
+        <img src="assets/logo-header.png" alt="Mario" class="logo-header">
+        <nav>
+            <a>Home</a>
+            <a href="#form-contato" onclick="clickButton()">Fale conosco</a>
+            <a>Nossos projetos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <img src="assets/logo.png" alt="Logo do Mario" class="logo">
+            <p>🔧 Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo! 🔧</p>
+            <p>
+                Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos
+                entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+                Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!
+            </p>
+            <button onclick="clickButton()">Entre em contato</button>
+        </section>
+
+        <section class="container-image">
+            <img src="assets/mario.png" alt="Irmãos Mario e Luigi" class="irmaos">
+        </section>
+    </main>
+
+    <footer>
+        <a href="https://wa.me/5511935621556?text=Ol%C3%A1%2C%20quero%20ajuda%20dos%20irm%C3%A3os%20M%C3%A1rio!">
+            <img src="assets/whatsapp.png" alt="Logo do Whatsapp" class="whatsapp">
+        </a>
+    </footer>
+
+    <div class="video">
+        <video src="assets/video.mp4" autoplay muted loop></video>
+    </div>
+    <div class="mascara"></div>
+
+    <div class="mascara-form" onclick="clickInMask()">
+    </div>
+    <form id="form-contato" action="https://formcarry.com/s/UtwfQK2pApW" method="POST" enctype="multipart/form-data">
+        <input type="text" placeholder="Nome" name="nome" required>
+        <input type="email" placeholder="E-mail" name="email" required>
+        <input type="tel" placeholder="Telefone" name="telefone" required>
+        <textarea placeholder="Nos conte um pouco mais sobre seu problema" name="duvida"></textarea>
+        <button class="form-button" type="submit">Pedir orçamento</button>
+    </form>
+</body>
+
+<script src="./scripts.js"></script>
+
+</html>
